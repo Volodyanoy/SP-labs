@@ -28,7 +28,7 @@ while true; do
     	echo "File creation date: $(date -d "$(stat -c %w "$filename")" +"%Y-%m-%d %H:%M:%S")"
     else
         # Output error message if file doesn't exist
-        echo "Error: File $filename does not exist." >&2 2>> errors.txt
+        echo "Error: File $filename does not exist." >&2
     fi
     
     # Ask user if they want to continue or quit
